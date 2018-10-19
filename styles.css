@@ -1,0 +1,21 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  background-color: lightblue;
+}
+
+/*LEFT SIDE NAVIGATION PANEL*/
+
+
+.left-side-nav {
+  background-color: #354052;
+}
+
+
+
+/*MAIN PAGE CONTENT*/
+
+main {
+  background-color: #edf2f6;
+}
