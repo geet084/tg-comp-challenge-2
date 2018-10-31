@@ -3,71 +3,283 @@
 <head>
   <title>Document</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
   <link rel="stylesheet" href="normalize.css">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <aside class="left-side-nav">
-    <article class="user">
-
-    </article>
-    <article class="main-area">
-
-    </article>
-    <article class="admin-area">
-
-    </article>
-    <article class="cat-area">
-
-    </article>
+    <section class="user">
+      <img src="images/user-pic.jpg#" alt="">
+      <h1 class="user-name">Newton Barley <i class="fas fa-angle-down"></i></h1>
+    </section>
+    <section class="main-area nav-section">
+      <h3 class="nav-titles">Main</h3>
+      <h2><i class="fas fa-home"></i> HOME</h2>
+      <h2><i class="fas fa-briefcase"></i> JOBS</h2>
+      <h2><i class="fas fa-file-alt"></i> RESUMES</h2>
+      <h2><i class="fas fa-clipboard-list"></i> TASKS</h2>
+      <h2><i class="fas fa-calendar-alt"></i>CALENDAR</h2>
+    </section>
+    <section class="admin-area nav-section">
+      <h3 class="nav-titles">Admin</h3>
+      <h2><i class="fas fa-users"></i> USERS</h2>
+      <h2><i class="fas fa-map-marker-alt"></i> LOCATIONS</h2>
+      <h2><i class="fas fa-sitemap"></i> WORKFLOWS</h2>
+      <h2><i class="fas fa-poo"></i> JOB BOARDS</h2>
+      <h2><i class="fas fa-poo"></i> SOCIAL</h2>
+    </section>
+    <section class="cat-area nav-section">
+      <h3 class="nav-titles">Categories</h3>
+      <h7 class="cont">
+        <input type="checkbox" class="cb-admin">
+        <span class="checkmark cb-admin"></span>
+        Administration
+      </h7>
+      <h7 class="cont">
+        <input type="checkbox" class="cd-design">
+        <span class="checkmark cb-design"></span>
+        Design
+      </h7>
+      <h7 class="cont">
+        <input type="checkbox" class="cb-exec">
+        <span class="checkmark cb-exec"></span>
+        Executive
+      </h7>
+      <h7 class="cont">
+        <input type="checkbox" class="cb-hr">
+        <span class="checkmark cb-hr"></span>
+        Human Resources
+      </h7>
+    </section>
   </aside>
   <nav class="page-header">
-    <article class="drop-down">
-      
-    </article>
-    <article class="search-bar">
-      
-    </article>
-    <article class="icon-1">
-      
-    </article>
-    <article class="icon-2">
-      
-    </article>
-    <article class="icon-3">
-      
-    </article>
-  </nav>
-  <main>
-    <section class="top-area">
-      <article class="cust-svc">
-      
-      </article>
-      <article class="links-cust-svc">
-        
-      </article>
-      <article class="links-data-content">
-        
-      </article>
+    <section class="icon-left icon">
+      <i class="fas fa-caret-left"></i>
+      <i class="fas fa-bars"></i>
     </section>
-    <section class="data-content">
-      <article class="left-side-graph">
-        
+    <section class="search-bar search">
+      <label for="search-icon" class="search">
+      <input class="search" id="search-icon" type="text" placeholder="&#xf002   Search for a job, task, or resume">
+      </label>
+    </section>
+    <section class="icon-right icon">
+      <i class="fas fa-user-plus"></i>
+    </section>
+    <section class="icon-right icon">
+      <i class="fas fa-poo"></i>
+    </section>
+    <section class="icon-right icon">
+      <i class="fas fa-poo"></i>
+    </section>
+  </nav>
+  <section class="content-header">
+    <article class="header">
+      <h2>Customer Service Representative</h2>
+        <div>
+          <h3 class="header-loc"><i class="fas fa-map-marker-alt"></i> San Francisco, CA -</h3>
+          <h3 class="preview-post">Preview this post</h3>
+        </div>
+    </article>
+    <article class="links-cust-svc">
+      <h4><i class="fas fa-circle"></i>Open</h4>
+      <i class="fas fa-bookmark"></i>
+      <i class="fas fa-pencil-alt"></i>
+      <i class="fas fa-trash-alt"></i>
+    </article>
+    <article class="links-data-content">
+      <ul>
+        <li class="active-link">SUMMARY</li>
+        <li>APPLICANTS</li>
+        <li>JOB BOARD</li>
+        <li>INTERVIEWS</li>
+        <li>ACTIVITY</li>
+        <li>BROADCAST</li>
+        <li>NOTIFICATIONS</li>
+      </ul>
+    </article>
+  </section>
+  <section class="content-data">
+    <article class="left-side-graph graph-box">
+      <div class="graph-box">
+        <div class="graph-chart">
+          <svg viewBox="0 0 36 36" class="chart one">
+            <path class="circle-bg"
+              d="M18 2.0845
+                a 15.9155 15.9155 0 0 1 0 31.831
+                a 15.9155 15.9155 0 0 1 0 -31.831"  />
+            <path class="circle"
+              stroke-dasharray="80, 20"
+              stroke-dashoffset="-50"
+              d="M18 2.0845
+                a 15.9155 15.9155 0 0 1 0 31.831
+                a 15.9155 15.9155 0 0 1 0 -31.831"  />
+            <text x="18" y="20.35" class="text-large">8,120</text>
+            <text x="18" y="25" class="text-small">Applicants</text>
+          </svg>
+        </div>
+        <div class="graph-chart">
+          <svg viewBox="0 0 36 36" class="chart two">
+            <path class="circle-bg"
+              d="M18 2.0845
+                a 15.9155 15.9155 0 0 1 0 31.831
+                a 15.9155 15.9155 0 0 1 0 -31.831"  />
+            <path class="circle"
+              stroke-dasharray="40, 60"
+              stroke-dashoffset="-50"
+              d="M18 2.0845
+                a 15.9155 15.9155 0 0 1 0 31.831
+                a 15.9155 15.9155 0 0 1 0 -31.831"   />
+            <text x="18" y="20.35" class="text-large">3,696</text>
+            <text x="18" y="25" class="text-small">Interviews</text>
+          </svg>
+        </div>
+        <div class="graph-chart">
+          <svg viewBox="0 0 36 36" class="chart blue">
+            <path class="circle-bg"
+              d="M18 2.0845
+                a 15.9155 15.9155 0 0 1 0 31.831
+                a 15.9155 15.9155 0 0 1 0 -31.831"   />
+            <path class="circle"
+              stroke-dasharray="25, 75"
+              stroke-dashoffset="-50"
+              d="M18 2.0845
+                a 15.9155 15.9155 0 0 1 0 31.831
+                a 15.9155 15.9155 0 0 1 0 -31.831"   />
+            <text x="18" y="20.35" class="text-large">1773</text>
+            <text x="18" y="25" class="text-small">Forwards</text>
+          </svg>
+        </div>
+      </div>
+      <h6 class="btn-style">TOTALS - Out of 5,280 views</h6>
+    </article>
+    <article class="right-side-graph">
+      <img src="images/graph.png" alt="">
+      <h6 class="btn-style">APPLICANTS/DAY</h6>
+    </article>
+  </section>
+  <section class="cont-line">
+    <i class="fas fa-chevron-up"></i>
+  </section>
+  <section class="form-area">
+    <article>
+      <table>
+        <tr>
+          <th class="col"></th>
+          <th class="form-lt">JOB DESCRIPTION</th>
+          <th class="form-rt">
+            <div class="form-edit">
+              <i class="fas fa-pen"></i>EDIT
+            </div>
+          </th>
+          <th class="col"></th>
+        </tr>
+        <tr>
+          <td class="col"></td>
+          <td class="form-heading">POSITION TITLE</td>
+          <td>Customer Service Representative</td>
+          <td class="col"></td>
+        </tr>
+        <tr>
+          <td class="col"></td>
+          <td class="form-heading">LOCATION</td>
+          <td>San Francisco, CA</td>
+          <td class="col"></td>
+        </tr>
+        <tr>
+          <td class="col"></td>
+          <td class="form-heading">EMPLOYMENT TYPE</td>
+          <td>Full-time</td>
+          <td class="col"></td>
+        </tr>
+        <tr>
+          <td class="col"></td>
+          <td class="form-heading">EXPERIENCE</td>
+          <td>Mid-level</td>
+          <td class="col"></td>
+        </tr>
+        <tr>
+          <td class="col"></td>
+          <td class="form-heading">STATUS</td>
+          <td>Open</td>
+          <td class="col"></td>
+        </tr>
+        <tr>
+          <td class="col"></td>
+          <td class="form-heading">DESCRIPTION</td>
+          <td>
+            The Customer Service Representative is responsible for interacting with and providing quality assistance to all radical customers, responsible for keeping up-to-date on the various product shizzle; helping the bidness reduce customer service wait times while doing a backhand spring and eating a ham sandwhich
+          </td>
+          <td class="col"></td>
+        </tr>
+        <tr>
+          <td class="col"></td>
+          <td class="form-heading">HIRING LEAD</td>
+          <td class="hire-lead"><img src="#" alt=""><img class="hire-lead-img" src="images/tom.png" alt="">Tom Tizzy</td>
+          <td class="col"></td>
+        </tr>
+        <tr>
+          <td class="col"></td>
+          <td class="form-heading">APPROVED SALARY</td>
+          <td class="form-heading">$58,000</td>
+          <td class="col"></td>
+        </tr>
+      </table>
+    </article>
+  </section>
+  <section class="social-area">
+      <article class="link-facebook">
+        <img src="images/fblogo.png" alt="fb logo">
+        <p>Post to Facebook</p>
+      </article> 
+      <article class="link-twitter">
+        <img src="images/twlogo.png" alt="tw logo">
+        <p>Tweet this Job</p>
       </article>
-      <article class="right-side-graph">
-        
+      <article class="link-linkedin">
+        <img src="images/lilogo.png" alt="li logo">
+        <p>Post to Linkedin</p>
+      </article>
+      <article class="link-to-job">
+        <div class="social-space">
+          <img src="images/globe-icon.png" alt="">
+          <h5 class="social-space soc-header">Link to this Job</h5>
+        </div>
+        <h6 class="social-space">Lorem ipsum is a thing of random shizzle to which other random nizzles add thoughtful strategery to</h6>
+        <div class="social-space">
+          <input class="soc-input" type="text" placeholder="www.skydivingclowns.net/freefall/hitting-on-the-red-nose">
+          <button class="soc-btn" type="submit">Copy</button>
+        </div>
       </article>
       <article class="divider">
-        
       </article>
-      <article class="form-area">
-        
+      <article class="widget-btn">
+        <div class="social-space">
+          <img src="images/globe-icon.png" alt="">
+          <h5 class="soc-header">Use the Button Widget</h5>
+        </div>
+        <h6 class="social-space">
+          This widget embeds the buttons for sharing the job for submitting a resume on your site
+        </h6>
+        <div class="social-space">
+          <input class="soc-input" type="text" placeholder='<script type="text/javascript" class="add-widget" id="resume"></script>'>
+          <button class="soc-btn" type="submit">Copy</button>
+        </div> 
       </article>
-      <aside class="social-area">
-        
-      </aside>
-      
-    </section>
-  </main>
+      <article class="divider">
+      </article>
+      <article class="upload-resumes">
+        <div class="social-space">
+          <img src="images/plane-icon.png" alt="">
+          <h5 class="soc-header">Upload Resumes by Email</h5>
+        </div>
+        <h6 class="social-space">
+          You can automatically upload multiple resumes to this job by emailing the address below.
+        </h6>
+        <input class="social-space  soc-input" type="text" placeholder="tomtizzy@gmail.com">
+      </article>
+      <article class="divider">
+      </article>
+  </section>
 </body>
 </html>
